@@ -103,3 +103,20 @@ Ejemplos:
 ### Convenciones de ramas
 - `master`: rama principal estable y producible.
 - `NOMBRE/Feature`: rama principal de cada desarrollador, por ejemplo `nico/turnos`.
+
+## Boilerplate utilizado
+
+[https://github.com/Damianpiazz/bulletproof-react/tree/master/apps/nextjs-app/src](https://github.com/Damianpiazz/bulletproof-react/tree/master/apps/nextjs-app/src)
+
+## Autenticación con Auth.js (Google SSO)
+
+### Referencias
+
+* Documentación oficial de Auth.js:
+  https://authjs.dev/
+
+* Guía de instalación:
+  https://authjs.dev/getting-started/installation
+
+* Configuración de Google OAuth:
+  https://authjs.dev/getting-started/providers/google
