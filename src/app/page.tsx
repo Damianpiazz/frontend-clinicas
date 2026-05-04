@@ -1,19 +1,33 @@
-import Link from 'next/link'
+import { Phone, Clock } from "lucide-react"
+import { HeroSection } from "@/features/hero/components/HeroSection"
 
 export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="flex flex-col items-center gap-6 text-center">
-        <h1 className="text-3xl font-semibold tracking-tight text-foreground">
-          🗿 Primeros pasos en Next.js
-        </h1>
-        <Link
-          href="/login"
-          className="flex h-10 items-center rounded-lg bg-foreground px-6 text-sm font-medium text-background transition-opacity hover:opacity-80"
-        >
-          Ir al login
-        </Link>
-      </div>
-    </div>
+    <main>
+      <HeroSection
+        title="Policlínica Privada Tiscornia"
+        subtitle="Centermed S.A."
+        description="Centro médico con más de 30 especialidades y estudios de alta complejidad en Berazategui."
+        actions={[
+          {
+            label: "Sacar Turno",
+            href: "/turnos",
+            variant: "secondary",
+          },
+          {
+            label: "Cómo Llegar",
+            href: "/ubicacion",
+            variant: "secondary",
+          },
+          {
+            label: "Login",
+            href: "/login",
+            variant: "secondary",
+          },
+        ]}
+        infoText="Lunes a Viernes 8 a 20hs | Sábados 8 a 16hs"
+        infoIcon={Clock}
+      />
+    </main>
   )
 }
